@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Registry — Documentation</title>
+  <style>
+    :root { --amadeus-blue: #005eb8; --bg: #f8f9fa; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: #222; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .container { max-width: 640px; text-align: center; padding: 3rem 1.5rem; }
+    h1 { font-size: 2rem; margin-bottom: .5rem; }
+    p.sub { color: #555; margin-bottom: 2rem; }
+    .cards { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .card { flex: 1 1 240px; max-width: 280px; background: #fff; border-radius: 10px; padding: 2rem 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.08); text-decoration: none; color: inherit; transition: transform .15s, box-shadow .15s; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+    .card h2 { font-size: 1.25rem; color: var(--amadeus-blue); margin-bottom: .5rem; }
+    .card p { font-size: .9rem; color: #555; }
+    .badge { display: inline-block; font-size: .7rem; font-weight: 600; padding: .15rem .5rem; border-radius: 4px; margin-bottom: .75rem; }
+    .badge-mkdocs { background: #e3f0ff; color: var(--amadeus-blue); }
+    .badge-docusaurus { background: #e8f5e9; color: #2e7d32; }
+    footer { margin-top: 2.5rem; font-size: .8rem; color: #888; }
+    footer a { color: var(--amadeus-blue); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Prompt Registry</h1>
+    <p class="sub">Marketplace and registry for Copilot prompt bundles in VS Code</p>
+
+    <div class="cards">
+      <a class="card" href="mkdocs/">
+        <span class="badge badge-mkdocs">MkDocs Material</span>
+        <h2>MkDocs Site</h2>
+        <p>Python-based documentation with Material theme, search, and build hooks.</p>
+      </a>
+      <a class="card" href="docusaurus/">
+        <span class="badge badge-docusaurus">Docusaurus</span>
+        <h2>Docusaurus Site</h2>
+        <p>React-based documentation with sidebars, local search, and SmartLink routing.</p>
+      </a>
+    </div>
+
+    <footer>
+      <a href="https://github.com/AmadeusITGroup/prompt-registry">GitHub Repository</a>
+    </footer>
+  </div>
+</body>
+</html>
